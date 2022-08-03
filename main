@@ -1,0 +1,21 @@
+#! /bin/troy
+require 'heartbeat'
+
+:weiterleben
+while(sinnesEindrucksBuffer.available() == 0) {
+  breathIn();
+  wait(1);
+  breathOut();
+  wait(1);
+}
+
+sinnesEindruck = sinnesEindruckBuffer.get();
+Kognitiv.interpretiere(sinnesEindruck, FLAG_LOGICAL|FLAG_EMOTIONAL|FLAG_HUMORISTIC);
+
+calm =  calmification(Kognitiv.Emotion.rage);
+Kognitiv.interpretiere(calm, FLAG_LOGICAL);
+
+bufferOut = Kognitiv.createReaction(FLAG_LOGICAL|FLAG_HUMORISTIC);
+react(buffeROut);
+
+goto weiterleben
