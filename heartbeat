@@ -1,0 +1,9 @@
+#! /bin/troy
+
+while(brainGivesSignal == 1) {
+    try {
+        beat();
+    } catch {
+        beatToFast();
+    }
+}
