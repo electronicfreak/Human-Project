@@ -1,0 +1,12 @@
+Enum sensation{
+  TOUCH   = 0x0001,
+  PAIN    = 0x0002,
+  BURN    = 0x0004,
+  STING   = 0x0008,
+  SCRATCH = 0x0010,
+  TICKLE  = 0x0020,
+  FREEZE  = 0x0040,
+  PRESS   = 0x0080,
+  WET     = 0x0100,
+  TINGLE  = 0x0200
+}
