@@ -1,0 +1,33 @@
+include enums
+
+class bodyPart {
+  float volume;
+  float mass;
+  bool gotBone;
+  array limb subLimbs = NULL;
+
+  function gainMass(float howMuch) {
+    //TODO
+  }
+
+  function lossMass(float howMuch) {
+    //TODO
+  }
+
+  function getHurt() {
+    //TODO
+  }
+
+  function fellAsleep() {
+    //TODO
+  }
+}
+
+class limb extends bodyPart {
+  float length;
+  float strength;
+
+  function bow(float angle) {
+    //TODO
+  }
+}
